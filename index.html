@@ -525,36 +525,116 @@
 
     /* Mobile */
     @media (max-width: 768px) {
+      .container {
+        padding: 0 1.5rem;
+      }
+
+      nav .logo svg {
+        width: 24px;
+      }
+
+      nav .logo-main {
+        font-size: 1.2rem;
+      }
+
+      nav .logo-sub {
+        font-size: 0.65rem;
+        letter-spacing: 1.5px;
+      }
+
       nav ul {
         display: none;
       }
 
       section {
-        padding: 4rem 0;
+        padding: 3rem 0;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.75rem;
       }
 
       .hero {
-        min-height: 80vh;
-        padding-top: 5rem;
+        min-height: auto;
+        padding: 4rem 0 3rem;
       }
 
       .hero .container {
         grid-template-columns: 1fr;
-        gap: 3rem;
+        gap: 2rem;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .hero .tagline {
+        font-size: 1.05rem;
+        margin-bottom: 2rem;
       }
 
       .hero-image {
-        height: 400px;
+        height: 300px;
+        order: -1;
       }
 
-      .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 3rem;
+      .cta-button {
+        padding: 0.9rem 2rem;
+        font-size: 0.9rem;
+        width: 100%;
+        text-align: center;
+      }
+
+      .about-content p {
+        font-size: 1rem;
       }
 
       .stats-bar {
         gap: 1.5rem;
         flex-direction: column;
+        padding: 2rem 0;
+      }
+
+      .stat-item {
+        font-size: 0.8rem;
+      }
+
+      .team-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .practices-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .practice-card {
+        padding: 2rem 1.5rem;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        font-size: 0.9rem;
+      }
+
+      .contact-form button {
+        width: 100%;
+      }
+
+      footer nav ul {
+        flex-wrap: wrap;
+        gap: 1rem;
       }
     }
   </style>
