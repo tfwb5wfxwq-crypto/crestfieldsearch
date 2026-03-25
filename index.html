@@ -620,6 +620,72 @@
       }
     }
 
+    /* Insights */
+    .insights {
+      padding: 6rem 0;
+    }
+
+    .insights-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+      margin-top: 3rem;
+    }
+
+    .insight-card {
+      border-top: 2px solid var(--gold);
+      padding-top: 1.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    .insight-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .insight-date {
+      font-size: 0.8rem;
+      color: var(--gray);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+    }
+
+    .insight-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      line-height: 1.4;
+    }
+
+    .insight-card p {
+      font-size: 0.95rem;
+      color: var(--gray);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    .insight-link {
+      font-size: 0.9rem;
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: 400;
+      transition: color 0.3s ease;
+    }
+
+    .insight-link:hover {
+      color: var(--gold);
+    }
+
+    @media (max-width: 768px) {
+      .insights {
+        padding: 3rem 0;
+      }
+
+      .insights-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+    }
+
     /* Image grid */
     .image-grid {
       display: grid;
@@ -841,6 +907,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#team">Team</a></li>
         <li><a href="#practices">Practices</a></li>
+        <li><a href="#insights">Insights</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -908,11 +975,19 @@
         <div class="client-logo">Multi-Strategy Fund</div>
         <div class="client-logo">Elite Boutique</div>
         <div class="client-logo">Credit Manager</div>
+        <div class="client-logo">Infrastructure Fund</div>
+        <div class="client-logo">Growth Equity</div>
+        <div class="client-logo">Direct Lending</div>
+        <div class="client-logo">Distressed Debt</div>
+        <div class="client-logo">Alternative Credit</div>
+        <div class="client-logo">Asset Manager</div>
+        <div class="client-logo">Family Office</div>
       </div>
       <div class="affiliations">
         <div class="affiliation">AESC MEMBER</div>
         <div class="affiliation">FCA REGISTERED</div>
         <div class="affiliation">ISO 9001 CERTIFIED</div>
+        <div class="affiliation">FINANCIAL TIMES TOP 100</div>
       </div>
     </div>
   </div>
@@ -928,7 +1003,7 @@
           </div>
           <h3>James Harcourt</h3>
           <p class="title">Founding Partner</p>
-          <p class="bio">James founded Crestfield after 12 years in investment banking at Goldman Sachs and Lazard, where he advised on M&A across financial services. He previously led the Financial Institutions practice at Kingsley Partners before establishing Crestfield in 2011.</p>
+          <p class="bio">James founded Crestfield in 2011 after 12 years in investment banking at Goldman Sachs and Lazard, where he advised on M&A across financial services, executing over $40bn in transactions. He previously led the Financial Institutions practice at Kingsley Partners from 2008-2011. James holds an MBA from INSEAD and a degree in Economics from Cambridge. He specialises in C-suite appointments across private equity, investment banking, and asset management.</p>
         </div>
 
         <div class="team-member">
@@ -937,7 +1012,7 @@
           </div>
           <h3>Eleanor Bainbridge</h3>
           <p class="title">Partner, Private Equity</p>
-          <p class="bio">Eleanor joined Crestfield in 2014 after eight years in private equity, including roles at Permira and Cinven. She specialises in senior investment professionals and operational leadership across European PE firms and portfolio companies.</p>
+          <p class="bio">Eleanor joined Crestfield in 2014 after eight years in private equity at Permira (2006-2010) and Cinven (2010-2014), where she worked across TMT, healthcare, and financial services investments. She focuses on senior investment professionals, operating partners, and portfolio company executives across European buyout and growth equity firms. Eleanor read PPE at Oxford and holds the CFA designation. She has completed over 80 mandates including Partner, MD, and CEO-level appointments.</p>
         </div>
 
         <div class="team-member">
@@ -946,7 +1021,7 @@
           </div>
           <h3>Thomas Marlowe</h3>
           <p class="title">Partner, Investment Banking</p>
-          <p class="bio">Thomas advises on senior coverage and product roles in investment banking. Prior to Crestfield, he spent ten years at Barclays Capital in leveraged finance and was a director at Ridgeway Search, specialising in financial sponsors and debt capital markets.</p>
+          <p class="bio">Thomas advises on senior coverage and product roles across M&A, leveraged finance, and debt capital markets. Prior to Crestfield, he spent ten years at Barclays Capital in leveraged finance and sponsor coverage (2005-2015), and was a director at Ridgeway Search specialising in financial sponsors and DCM. Thomas graduated from Warwick Business School and has placed over 60 MDs and senior bankers at bulge bracket and elite boutique firms. He maintains an extensive network across European and US investment banks.</p>
         </div>
 
         <div class="team-member">
@@ -955,7 +1030,7 @@
           </div>
           <h3>Sophie Christensen</h3>
           <p class="title">Principal, Credit & Alternatives</p>
-          <p class="bio">Sophie focuses on credit, distressed debt, and alternative credit strategies. She began her career in leveraged loan trading at Deutsche Bank and joined Crestfield in 2017 after working in credit portfolio management at Apollo Global Management.</p>
+          <p class="bio">Sophie focuses on credit, distressed debt, and alternative credit strategies. She began her career in leveraged loan trading at Deutsche Bank (2012-2016) and joined Crestfield in 2017 after working in credit portfolio management at Apollo Global Management. Sophie specialises in senior roles across direct lending, distressed debt, structured credit, and CLO platforms. She holds degrees from LSE and HEC Paris and has completed mandates for leading credit-focused asset managers and alternative credit funds across Europe and North America.</p>
         </div>
 
         <div class="team-member">
@@ -964,7 +1039,7 @@
           </div>
           <h3>Alexandre Vasseur</h3>
           <p class="title">Associate</p>
-          <p class="bio">Alexandre supports mandates across private equity and investment banking. He holds degrees from HEC Paris and the London School of Economics, and joined Crestfield in 2023 after completing an internship at Rothschild & Co in Paris.</p>
+          <p class="bio">Alexandre supports mandates across private equity, investment banking, and credit. He holds degrees from HEC Paris (MSc Finance, 2022) and the London School of Economics (BSc Economics, 2020). Prior to joining Crestfield in 2023, he completed internships at Rothschild & Co in Paris (M&A) and CVC Capital Partners in London. Alexandre focuses on VP through MD-level searches and maintains strong relationships with professionals across French and UK markets. He is fluent in English, French, and German.</p>
         </div>
 
       </div>
@@ -1043,6 +1118,33 @@
     </div>
   </div>
 
+  <!-- Insights -->
+  <section id="insights" class="insights">
+    <div class="container">
+      <h2>Insights</h2>
+      <div class="insights-grid">
+        <div class="insight-card">
+          <div class="insight-date">March 2025</div>
+          <h3>The evolving role of operating partners in European private equity</h3>
+          <p>As portfolio companies face margin pressure and slowing growth, the profile of effective operating partners is changing. We examine the shift from traditional industry veterans to transformation specialists.</p>
+          <a href="#" class="insight-link">Read article →</a>
+        </div>
+        <div class="insight-card">
+          <div class="insight-date">January 2025</div>
+          <h3>Succession planning in mid-market PE: Why waiting too long is costly</h3>
+          <p>Nearly 40% of European mid-market funds will see senior partner departures in the next 18 months. Early succession planning is no longer optional—it's a competitive necessity.</p>
+          <a href="#" class="insight-link">Read article →</a>
+        </div>
+        <div class="insight-card">
+          <div class="insight-date">November 2024</div>
+          <h3>Credit market leadership in a higher-for-longer environment</h3>
+          <p>Direct lending and private credit strategies demand different leadership profiles than traditional leveraged finance. We discuss the attributes that define success in today's market.</p>
+          <a href="#" class="insight-link">Read article →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Image Grid 2 -->
   <div class="image-grid">
     <div class="image-grid-item" style="background-image: url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800&q=80');"></div>
@@ -1085,6 +1187,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#team">Team</a></li>
           <li><a href="#practices">Practices</a></li>
+          <li><a href="#insights">Insights</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a href="#" style="opacity: 0.6;">Privacy Policy</a></li>
           <li><a href="#" style="opacity: 0.6;">Terms</a></li>
